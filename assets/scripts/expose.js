@@ -2,7 +2,8 @@
 
 window.addEventListener('DOMContentLoaded', init);
 
-const jsConfetti = new JSConfetti();
+function init() {
+  const jsConfetti = new JSConfetti();
 
 const horn_select = document.querySelector("#horn-select");
 const horns = Array.from(horn_select.children);
@@ -69,7 +70,4 @@ range.addEventListener('change', e => {
   }
   audio.volume = range.value / 100;
 });
-
-function init() {
-  // TODO
 }

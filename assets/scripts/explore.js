@@ -2,7 +2,9 @@
 
 window.addEventListener('DOMContentLoaded', init);
 
-const select = document.querySelector('#voice-select');
+function init() {
+  // TODO
+  const select = document.querySelector('#voice-select');
 const explore = document.querySelector("#explore");
 const childrens = Array.from(explore.children);
 const face = childrens[1];
@@ -41,7 +43,4 @@ button.addEventListener('click', e => {
   face.src= "assets/images/smiling-open.png";
   speechSynthesis.speak(utter);
 })
-
-function init() {
-  // TODO
 }
